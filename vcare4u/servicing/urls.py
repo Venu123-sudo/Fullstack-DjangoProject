@@ -1,0 +1,43 @@
+from django.urls import path
+from .views import *
+
+urlpatterns = [
+    path('', home, name="home"),
+    path('about/', about, name="about"),
+    path('services/', services, name="services"),
+    path('blog/', blog, name="blog"),
+    path('contact/', contact, name="contact"),
+    path('cart/', cart, name='cart'),
+    path('washing/', washing, name='washing'),
+    path('washing1/', washing1, name='washing1'),
+    path('washing2/', washing2, name='washing2'),
+    path('washing3/', washing3, name='washing3'),
+    path('fridge/', fridge, name='fridge'),
+    path('fridge1/', fridge1, name='fridge1'),
+    path('fridge2/', fridge2, name='fridge2'),
+    path('fridge3/', fridge3, name='fridge3'),
+    path('micro/', micro, name='micro'),
+    path('micro1/', micro1, name='micro1'),
+    path('micro2/', micro2, name='micro2'),
+    path('micro3/', micro3, name='micro3'),
+    path('air/', air, name='air'),
+    path('air1/', air1, name='air1'),
+    path('air2/', air2, name='air2'),
+    path('air3/', air3, name='air3'),
+    path('tv/', tv, name='tv'),
+    path('tv1/', tv1, name='tv1'),
+    path('tv2/', tv2, name='tv2'),
+    path('tv3/', tv3, name='tv3'),
+    path('geyser/', geyser, name='geyser'),
+    path('geyser1/', geyser1, name='geyser1'),
+    path('geyser2/', geyser2, name='geyser2'),
+    path('geyser3/', geyser3, name='geyser3'),
+    path('plumbing/', plumbing, name='plumbing'),
+    path('plumbing1/', plumbing1, name='plumbing1'),
+    path('plumbing2/', plumbing2, name='plumbing2'),
+    path('plumbing3/', plumbing3, name='plumbing3'),
+    path('login/', login, name='login'),
+    path('register/',register, name='register'),
+]
+
+
